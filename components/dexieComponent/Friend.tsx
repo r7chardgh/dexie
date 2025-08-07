@@ -7,7 +7,7 @@ const Friend = () => {
     return await db.friends.toArray()
   })
   return (
-    <ul>
+    <ul className="flex flex-col gap-2">
       {friends?.map(fan => <li key={fan.id}>
         <p>name: {fan.name}</p>
         <p>age: {fan.age}</p>
